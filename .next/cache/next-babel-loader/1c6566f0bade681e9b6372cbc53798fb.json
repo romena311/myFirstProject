@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { About } from \"./About.1\";\nexport default About;","map":{"version":3,"sources":["C:/Users/Romena Debnath/Desktop/myproject/pages/about.js"],"names":["About"],"mappings":"AAAA,SAASA,KAAT,QAAsB,WAAtB;AAEA,eAAeA,KAAf","sourcesContent":["import { About } from \"./About.1\";\r\n\r\nexport default About"]},"metadata":{},"sourceType":"module"}

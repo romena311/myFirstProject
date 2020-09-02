@@ -1,0 +1,17 @@
+.intro {
+    display: block;
+    margin-bottom: 18%;
+}
+
+.down {
+    display: block;
+    margin-top: 18%;
+}
+
+.pic {
+    min-height: 393px;
+}
+
+.more {
+    border-radius: 0.25rem;
+}

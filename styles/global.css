@@ -44,6 +44,10 @@ a:focus {
     transition: all 0.3s ease;
 }
 
+.scrolled a:hover {
+    color: rgba(216,228,241,0.58);
+}
+
 .navbar-toggler {
     border-color: initial;
     padding: 4px 6px;
@@ -109,7 +113,16 @@ a:focus {
     }
   }
 
-svg #Capa_1:hover {
+.down {
+    display: block;
+    margin-top: 18%;
+}
+
+.downArrow {
+    enable-background:new 0 0 426.667 426.667;
+}
+
+.downArrow:hover {
     fill: rgb(255,255,255);
 }
 
@@ -130,7 +143,12 @@ svg #Capa_1:hover {
     background-image: url("https://picsum.photos/960/540?image=788");
     text-shadow: 2px 2px 2px #333;
 }
-#contact .btn {
+
+.send {
+    enable-background:new 0 0 469.335 469.335;
+}
+
+/*#contact .btn {
     border-radius: .25rem;
     border-color: #f8f9fa;
-}
+}*/

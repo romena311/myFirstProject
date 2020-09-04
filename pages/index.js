@@ -5,7 +5,7 @@ import IconSend from "../components/send";
 import React, { useState, useEffect} from "react";
 
 function HomePage() {
-   /* const [readMore, setreadMore] = useState(false);
+    const [readMore, setreadMore] = useState(false);
     const extraContent = document.getElementById("Div");
     const dots = document.getElementById("dots");
 
@@ -20,7 +20,7 @@ function HomePage() {
           extraContent.style.display === "none";
         setreadMore(false);
       }
-    };*/
+    };
     return (
       <Layout>
         <section id="hero" className="parallax">
@@ -58,7 +58,28 @@ function HomePage() {
                     aspernatur et suscipit quasi odio culpa delectus!
                     <div id="dots">....</div>                 
                   </p>
-                  <button className={`${styles.more} btn btn-primary`}>
+                    <div id="Div">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Quaerat quibusdam, cumque eligendi consequatur eaque quidem
+                            ipsam libero ab? Ipsum ea laudantium maxime obcaecati
+                            temporibus eius facere rem debitis, est odio?
+                        </p>
+                        <p>
+                            Esse error molestiae, beatae dignissimos in ut aspernatur?
+                            Obcaecati enim cumque non maiores nulla similique corrupti
+                            reprehenderit laborum earum fugiat! Libero dicta tenetur
+                            praesentium aperiam ut molestiae veniam neque placeat!
+                        </p>
+                        <p>
+                            Iste facilis ducimus eius inventore autem ullam libero,
+                            quidem voluptatum blanditiis deleniti reiciendis earum,
+                            labore iure quibusdam voluptatibus id. Corrupti, deleniti
+                            veritatis distinctio harum exercitationem dolores saepe
+                            obcaecati corporis atque?
+                        </p>
+                    </div>
+                  <button className={readMore ? `${styles.more} btn btn-primary` : `${styles.less} btn btn-secondary`}>
                     Read More
                   </button>
                 </div>

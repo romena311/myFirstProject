@@ -39,7 +39,7 @@ function Navbar() {
       >
         <div className="container-fluid">
           <div className="navbarBrand px-4">
-            <a href="#" className="navbar-brand text-center">
+            <a href="#" className="navbar-brand text-center tColor">
               <h5>Project Next.js</h5>
             </a>
           </div>
@@ -47,7 +47,7 @@ function Navbar() {
             className={
               myBtn
                 ? "navbar-toggler d-block d-lg-none btn btn-outline-light mx-4"
-                : "navbar-toggler d-block d-lg-none btn btn-outline-dark mx-4"
+                : "navbar-toggler d-block d-lg-none btn btn-outline-light mx-4"
             }
             type="button"
             data-toggle="collapse"
@@ -61,17 +61,17 @@ function Navbar() {
           <div id="maincontent" className="navbar-collapse collapse">
             <ul className="navbar-nav mx-auto">
               <li className="nav-item">
-                <a href="#introduction" className="nav-link acive px-4">
+                <a href="#introduction" className="nav-link acive px-4 tColor">
                   Introduction
                 </a>
               </li>
               <li className="nav-item">
-                <a href="#work" className="nav-link px-4">
+                <a href="#work" className="nav-link px-4 tColor">
                   My Works
                 </a>
               </li>
               <li className="nav-item">
-                <a href="#contact" className="nav-link px-4">
+                <a href="#contact" className="nav-link px-4 tColor">
                   Contact Me
                 </a>
               </li>
@@ -82,7 +82,7 @@ function Navbar() {
                   className={
                     myBtn
                       ? "btn btn-outline-light px-2 mx-4"
-                      : "btn btn-outline-dark px-2 mx-4"
+                      : "btn btn-outline-light px-2 mx-4"
                   }
                   type="button"
                   data-toggle="modal"

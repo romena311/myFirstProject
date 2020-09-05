@@ -9,3 +9,8 @@
 .more {
     border-radius: 0.25rem;
 }
+
+.dsply {
+    display: none;
+    transition: max-height 0.2s ease-out;
+}

@@ -2,40 +2,43 @@ import styles from "../styles/home.module.css";
 import Layout from "../components/layout";
 import IcondownArrow from "../components/downArrow";
 import IconSend from "../components/send";
-import React, { useState, useEffect} from "react";
+import React, { useState } from "react";
 
 function HomePage() {
-    const [readMore, setreadMore] = useState(false);
-    const extraContent = document.getElementById("Div");
-    const dots = document.getElementById("dots");
-
-    useEffect(() => {
-        button.addEventListener ("click", changereadMore);
-    }, []);
+    const [readMore, setreadMore] = useState(true);
     const changereadMore = () => {
+      const extraContent = document.getElementById("Div");
+      const dots = document.getElementById("dots");
+      const btnText = document.getElementById("BTN");
       if (dots.style.display === "none") {
-        extraContent.style.display === "block";
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read More";
+        extraContent.style.display = "none";
         setreadMore(true);
       } else {
-          extraContent.style.display === "none";
-        setreadMore(false);
+          dots.style.display = "none";
+          btnText.innerHTML = "Read Less";
+          extraContent.style.display = "inline";
+          setreadMore(false);
       }
     };
     return (
       <Layout>
         <section id="hero" className="parallax">
-          <div className="hpInner text-center text-light">
-            <div className={styles.intro}>
-              <h2 className="Title">Welcome to My Project</h2>
-              <h4 className="subTitle">
-                I created this project with Next.js......
-              </h4>
+          <div className="overlay">
+            <div className="hpInner text-center text-light">
+              <div className={styles.intro}>
+                <h2 className="Title">Welcome to My Project</h2>
+                <h4 className="subTitle">
+                  I created this project with Next.js......
+                </h4>
+              </div>
             </div>
-          </div>
-          <div className={`${styles.down} introText`}>
-            <a href="#introduction" className="navbar-nav down text-center">
-              <IcondownArrow />
-            </a>
+            <div className={`${styles.down} introText`}>
+              <a href="#introduction" className="navbar-nav down text-center">
+                <IcondownArrow />
+              </a>
+            </div>
           </div>
         </section>
         <section id="introduction" className="py-md-5 mt-md-5">
@@ -56,9 +59,9 @@ function HomePage() {
                     Accusamus, eos. Doloremque natus nobis in hic voluptatum,
                     corporis quisquam esse deserunt alias placeat magni,
                     aspernatur et suscipit quasi odio culpa delectus!
-                    <div id="dots">....</div>                 
+                    <span id="dots">....</span>                 
                   </p>
-                    <div id="Div">
+                    <div id="Div"className={styles.dsply}>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Quaerat quibusdam, cumque eligendi consequatur eaque quidem
@@ -79,7 +82,7 @@ function HomePage() {
                             obcaecati corporis atque?
                         </p>
                     </div>
-                  <button className={readMore ? `${styles.more} btn btn-primary` : `${styles.less} btn btn-secondary`}>
+                  <button id="BTN" className={readMore ? `btn btn-primary` : `btn btn-secondary`} onClick={changereadMore}>
                     Read More
                   </button>
                 </div>

@@ -1,11 +1,12 @@
 html,
 body {
-  display: block;
-  height: 100%;
-  font: 400 20px/1.8 "Lato", sans-serif;
-  color: rgb(82, 82, 82);
-  margin: 0;
-  padding: 0;
+    scroll-behavior: smooth;
+    display: block;
+    height: 100%;
+    font: 400 20px/1.8 "Lato", sans-serif;
+    color: rgb(82, 82, 82);
+    margin: 0;
+    padding: 0;
 }
 
 .t-font-big {
@@ -31,6 +32,10 @@ a:focus {
     z-index: 1000;
     transition: 250ms ease-in;
     background-color: transparent;
+}
+
+.tColor {
+    color: white;
 }
 
 .scrolled {
@@ -78,6 +83,15 @@ a:focus {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.overlay {
+    position: relative;
+    display: block;
+    min-height: 375px;
+    height: 100vh;
+    background-color: rgba(1, 68, 112, 0.534);
+    z-index: 2;
 }
 
 .hpInner {

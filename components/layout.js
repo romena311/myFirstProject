@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Navbar from './navbar';
 import Login from './loginModal';
+import Footer from './footer';
 
 
 const Layout = (props) => (
@@ -18,6 +19,7 @@ const Layout = (props) => (
             <div>
                 {props.children}
             </div>
+            <Footer/>
         </section>
     </div>
 );

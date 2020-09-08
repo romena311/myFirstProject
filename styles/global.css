@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 html,
 body {
     scroll-behavior: smooth;
@@ -11,6 +15,10 @@ body {
 
 .t-font-big {
     font-size: 1.25rem;
+}
+
+.tColor {
+    color: white;
 }
 
 a {
@@ -30,12 +38,8 @@ a:focus {
 .myNavbar {
     width: 100%;
     z-index: 1000;
-    transition: 250ms ease-in;
+    transition: 150ms ease-in;
     background-color: transparent;
-}
-
-.tColor {
-    color: white;
 }
 
 .scrolled {
@@ -72,7 +76,7 @@ a:focus {
 }
 
 #hero {
-    background-image: url("https://www.sma-sunny.com/wp-content/uploads/2019/05/Green-sea-turtles.jpg");
+    background-image: url("../public/Green-sea-turtles.jpg");
     min-height: 375px;
     height: 100vh;
 }
@@ -162,7 +166,141 @@ a:focus {
     enable-background:new 0 0 469.335 469.335;
 }
 
-/*#contact .btn {
-    border-radius: .25rem;
+.bg-black {
+    background-color: black;
+}
+
+footer .row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+#footer .btn {
+    border: 1px solid;
+    border-radius: .50rem;
     border-color: #f8f9fa;
-}*/
+}
+
+.social:hover {
+    fill: rgba(216,228,241,0.58);
+}
+
+.header {
+    font-weight: 700;
+}
+
+.content {
+    display: block;
+    clear: both;
+    content: " ";
+    width: 100%;
+}
+
+.imgThumbnailContent {
+    display: flex;
+    flex-direction: row;
+    min-height: auto;
+    margin-bottom: 0;
+}
+
+.imgThumbnail {
+    padding: 0;
+    float: left;
+    width: 200px;
+    height: 120px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.img-bg {
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    bottom: -1px;
+    right: -1px;
+    z-index: 0;
+    background-size: cover;
+    background-position: 50% 50%;
+    transition: 500ms ease all;
+    overflow: hidden;
+}
+
+.img-bg:hover {
+    transform: scale(1.2);
+}
+
+.iconContent {
+    fill: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    transition: .10s ease;
+}
+
+.overlayImg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000000ab;
+    overflow: hidden;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: .8s ease;
+    transition: .8s ease;
+}
+
+.img-bg:hover .overlayImg {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.contentHolder {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.contentHolder h4 {
+    max-height: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.contentHolder a {
+    color: white;
+}
+
+.contentHolder a:hover {
+    text-decoration: underline;
+}
+
+.profile {
+    enable-background:new 0 0 60 60;
+}
+
+.global {
+    enable-background:new 0 0 512 512;
+}
+
+.galleryIcon {
+    enable-background:new 0 0 430.23 430.23;
+}

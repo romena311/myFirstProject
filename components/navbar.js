@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import IconMenu from "./menu";
-import styles from "./navbar.module.css";
+import styles from "../styles/navbar.module.css";
 
 function Navbar() {
   const [myNavbar, setNavbar] = useState(false);
@@ -12,7 +12,7 @@ function Navbar() {
   }, []);
 
   const changeNavbar = () => {
-    if (window.scrollY >= 540) {
+    if (window.scrollY >= 80) {
       setNavbar(true);
     } else {
       setNavbar(false);
@@ -20,13 +20,13 @@ function Navbar() {
   };
 
   const changeButton = () => {
-    if (window.scrollY >= 540) {
+    if (window.scrollY >= 80) {
       setButton(true);
     } else {
       setButton(false);
     }
   };
-  
+
   return (
     <>
       <nav
